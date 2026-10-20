@@ -1,3 +1,8 @@
+"""
+This module is inherited from legacy. It certainly would deleted in the future in
+favor to common testing tools.
+"""
+
 __all__ = ("Mock", "track_calls")
 
 
