@@ -1,7 +1,7 @@
 import pytest
 from django.core.exceptions import ValidationError, PermissionDenied
 
-from django_project.testapp.models import TreeNode, OwnedTreeNode
+from tests.django_project.testapp.models import TreeNode, OwnedTreeNode
 
 
 @pytest.fixture

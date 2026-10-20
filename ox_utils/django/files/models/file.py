@@ -12,7 +12,7 @@ from django.core.exceptions import ValidationError, PermissionDenied, FieldDoesN
 from django.utils.translation import gettext_lazy as _
 from django.urls import reverse
 
-from ox_utils.models import Described, Timestamped, UUID
+from ox_utils.django.models import Described, Timestamped, UUID
 
 from ..conf import files_settings, FileSettings
 from .. import processors
@@ -76,7 +76,7 @@ class BaseFile(Described, Timestamped, UUID):
     Settings
     --------
 
-    The model uses by default the :py:attr:`~ox_utils.files.conf.files_settings`. However
+    The model uses by default the :py:attr:`~ox_utils.django.files.conf.files_settings`. However
     you might want to integrate your own FileSettings instance by assigning :py:attr:`_settings`.
 
     At deletion, related files and previews are deleted based on ``.conf.files_settings`` (``CLEAR_FILES_ON_DELETE=True`` option).

@@ -4,9 +4,9 @@ from django.core.exceptions import ValidationError
 from django.db import models
 from rest_framework import serializers
 
-from django_project.testapp.apps import AppConfig
-from ox_utils.models.cls import ClassField, ClassPath
-from ox_utils.models.drf import SerializerField
+from tests.django_project.testapp.apps import AppConfig
+from ox_utils.django.models.cls import ClassField, ClassPath
+from ox_utils.django.models.drf import SerializerField
 
 
 # --- ClassField & ClassPath
@@ -35,10 +35,10 @@ def model(class_path):
 class TestClassPath:
     def test___init___with_class(self):
         cpath = ClassPath(AppConfig)
-        assert cpath.path == "django_project.testapp.apps.AppConfig"
+        assert cpath.path == "tests.django_project.testapp.apps.AppConfig"
 
     def test___init___with_class_str(self):
-        cpath = ClassPath("django_project.testapp.apps.AppConfig")
+        cpath = ClassPath("tests.django_project.testapp.apps.AppConfig")
         assert cpath.cls == AppConfig
 
     def test___str__(self, class_path):
@@ -51,34 +51,34 @@ class TestClassPath:
         assert class_path.cls == AppConfig
 
     def test___eq__(self, class_path):
-        assert class_path == ClassPath("django_project.testapp.apps.AppConfig")
-        assert class_path == "django_project.testapp.apps.AppConfig"
+        assert class_path == ClassPath("tests.django_project.testapp.apps.AppConfig")
+        assert class_path == "tests.django_project.testapp.apps.AppConfig"
         assert class_path == AppConfig
-        assert class_path != ClassPath("ox_utils.models.ClassField")
-        assert class_path != "ox_utils.models.ClassField"
+        assert class_path != ClassPath("ox_utils.django.models.ClassField")
+        assert class_path != "ox_utils.django.models.ClassField"
         assert class_path != ClassPath
 
 
 class TestClassField:
     def test_from_db_value(self, class_field, class_path):
-        assert class_field.from_db_value("django_project.testapp.apps.AppConfig") == class_path
+        assert class_field.from_db_value("tests.django_project.testapp.apps.AppConfig") == class_path
 
     def test_to_python(self, class_field, class_path):
-        assert class_field.to_python("django_project.testapp.apps.AppConfig") == class_path
+        assert class_field.to_python("tests.django_project.testapp.apps.AppConfig") == class_path
 
     def test_get_prep_value(self, class_field, class_path):
-        assert class_field.get_prep_value(class_path) == "django_project.testapp.apps.AppConfig"
-        assert class_field.get_prep_value(AppConfig) == "django_project.testapp.apps.AppConfig"
+        assert class_field.get_prep_value(class_path) == "tests.django_project.testapp.apps.AppConfig"
+        assert class_field.get_prep_value(AppConfig) == "tests.django_project.testapp.apps.AppConfig"
 
     def test_field_usage(self, model, class_path):
         assert model.handler == AppConfig
-        assert model.handler.path == "django_project.testapp.apps.AppConfig"
+        assert model.handler.path == "tests.django_project.testapp.apps.AppConfig"
         assert model.handler.cls == AppConfig
 
-        model.handler = "ox_utils.models.cls.ClassField"
+        model.handler = "ox_utils.django.models.cls.ClassField"
         assert model.handler == ClassField
         assert model.handler.cls == ClassField
-        assert str(model.handler) == "ox_utils.models.cls.ClassField"
+        assert str(model.handler) == "ox_utils.django.models.cls.ClassField"
 
 
 # ---- SerializerField

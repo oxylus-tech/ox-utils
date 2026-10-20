@@ -30,9 +30,9 @@ class FileSettings(conf.Settings):
     """ Port of the WebDAV server. """
 
     PROCESSORS: list[str] = [
-        "ox_utils.files.processors.ImageProcessor",
-        "ox_utils.files.processors.PDFProcessor",
-        "ox_utils.files.processors.LibreOfficeProcessor",
+        "ox_utils.django.files.processors.ImageProcessor",
+        "ox_utils.django.files.processors.PDFProcessor",
+        "ox_utils.django.files.processors.LibreOfficeProcessor",
     ]
     """ List of file processors. """
 

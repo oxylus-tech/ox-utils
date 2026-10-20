@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from ox_utils.serializers import ModelSerializer, NestedSerializer, NestedModelSerializer
+from ox_utils.django.serializers import ModelSerializer, NestedSerializer, NestedModelSerializer
 
 
 from .models import Child, Parent, SerializerTestModel

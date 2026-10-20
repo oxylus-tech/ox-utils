@@ -1,6 +1,6 @@
 import pytest
 
-from ox_utils import functional, tests
+from ox_utils.django import functional, tests
 
 
 class OwnedClass(functional.Owned, tests.Mock):

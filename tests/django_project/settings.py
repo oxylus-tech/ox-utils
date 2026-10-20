@@ -26,7 +26,7 @@ JWT_KEY = "jwt-insecure-7yj2^c_lvd^n$6wq4@a98j9&1+!424*$t(p9+3!8-do*m+-@5q"
 
 # Application definition
 INSTALLED_APPS = [
-    "django_project.testapp",
+    "tests.django_project.testapp",
     "caps",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -48,7 +48,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "django_project.urls"
+ROOT_URLCONF = "tests.django_project.urls"
 SITE_ID = 1
 
 TEMPLATES = [

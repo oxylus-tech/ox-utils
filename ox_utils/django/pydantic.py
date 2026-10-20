@@ -14,7 +14,7 @@ class LazyTranslation:
 
         from django.utils.translation import gettext_lazy as _
         from pydantic import BaseModel
-        from ox_utils.pydantic import LazyTranslation
+        from ox_utils.django.pydantic import LazyTranslation
 
 
         class MyModel(BaseModel):

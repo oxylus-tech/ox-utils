@@ -1,7 +1,7 @@
 import pytest
 
-from django_project.testapp.models import Value
-from ox_utils import models
+from tests.django_project.testapp.models import Value
+from ox_utils.django import models
 
 
 class SaveHookQuerySet(models.SaveHookQuerySet):

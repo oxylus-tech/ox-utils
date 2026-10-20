@@ -5,13 +5,13 @@ import pytest
 from django.http import Http404
 from rest_framework import serializers
 
-from ox_utils.serializers import (
+from ox_utils.django.serializers import (
     NestedInfo,
     RelatedField,
     RelatedObjectField,
 )
-from django_project.testapp.models import SerializerTestModel
-from django_project.testapp.serializers import (
+from tests.django_project.testapp.models import SerializerTestModel
+from tests.django_project.testapp.serializers import (
     NestedConfigSerializer,
     ParentSerializer,
     RelatedSerializer,

@@ -3,9 +3,9 @@ import pytest
 from django.db import IntegrityError
 from rest_framework.exceptions import PermissionDenied
 
-from django_project.testapp.models import Child, Parent
-from django_project.testapp.serializers import ChildSerializer, ParentSerializer
-from ox_utils.serializers import NestedSerializer, NestedModelSerializer
+from tests.django_project.testapp.models import Child, Parent
+from tests.django_project.testapp.serializers import ChildSerializer, ParentSerializer
+from ox_utils.django.serializers import NestedSerializer, NestedModelSerializer
 
 
 class ParentKeepChildrenSerializer(NestedModelSerializer):

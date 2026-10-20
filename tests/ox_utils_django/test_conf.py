@@ -1,6 +1,6 @@
 import pytest
 
-from ox_utils import conf
+from ox_utils.django import conf
 
 
 class MySettings(conf.Settings):

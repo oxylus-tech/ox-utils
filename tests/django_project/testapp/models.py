@@ -2,10 +2,10 @@
 
 from django.db import models
 
-from ox_utils.models import UUID
-from ox_utils.models.tree import TreeNode as _TreeNode
-from ox_utils.models.owned import OwnedTreeNode as _OwnedTreeNode
-from ox_utils.files.models import BaseFile, BaseFolder
+from ox_utils.django.models import UUID
+from ox_utils.django.models.tree import TreeNode as _TreeNode
+from ox_utils.django.models.owned import OwnedTreeNode as _OwnedTreeNode
+from ox_utils.django.files.models import BaseFile, BaseFolder
 
 
 __all__ = ("Value", "TreeNode", "OwnedTreeNode", "File", "Folder", "SerializerTestModel", "Child", "Parent")

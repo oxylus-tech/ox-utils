@@ -21,7 +21,7 @@ class Settings:
 
     .. code-block:: python
 
-        from ox_utils import conf
+        from ox_utils.django import conf
 
         __all__ = ("MyAppSettings", "app_settings")
 

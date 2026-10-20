@@ -7,8 +7,8 @@ from django.db import models
 from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 
-from ox_utils.models import Described, Timestamped
-from ox_utils.models.tree import TreeNode, TreeNodeQuerySet
+from ox_utils.django.models import Described, Timestamped
+from ox_utils.django.models.tree import TreeNode, TreeNodeQuerySet
 from ..conf import FileSettings, files_settings
 
 

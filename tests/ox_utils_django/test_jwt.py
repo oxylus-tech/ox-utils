@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 import pytest
 
-from ox_utils import jwt
+from ox_utils.django import jwt
 
 
 class CustomToken(jwt.JWToken):

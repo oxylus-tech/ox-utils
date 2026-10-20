@@ -22,4 +22,6 @@ Features:
 - ``pydantic``:
     - currently only add field type to support django lazy translation;
     - to certainly come at some point: django model field de-serializing data using pydantic models;
-
+- ``serializers``:
+    - Expose uuid instead of real db id;
+    - Nesting serializers with parent-child models.
