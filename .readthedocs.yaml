@@ -15,9 +15,4 @@ python:
   install:
     - method: uv
       command: sync
-      groups:
-          - docs
-          - dev
-          - django
-          - files
-          - jwt
+      groups: all
