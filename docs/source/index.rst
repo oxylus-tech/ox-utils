@@ -7,6 +7,15 @@ tools. Its purpose is to reuse common patterns and tools.
 Some modules may require optional dependencies, in such case you'll have to install
 it with those.
 
+Installation:
+
+.. code-block:: bash
+
+    pip install oxylus-utils
+
+    # for using files and django utilities
+    pip install oxylus-utils[django,files]
+
 
 Documentation
 -------------
