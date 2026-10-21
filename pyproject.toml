@@ -3,7 +3,7 @@ name = "oxylus-utils"
 description = "Django and python utilities."
 readme = "README.rst"
 license = "GPL-3.0-or-later"
-version = "0.0.1"
+version = "0.0.4"
 authors = [{ name="Thomas Baquet", email="thomas@oxylus.app" }]
 
 
@@ -25,13 +25,25 @@ dependencies = [
     "pyyaml>=6.0.3",
 ]
 
+[project.urls]
+Homepage = "https://github.com/oxylus-tech/ox-utils"
+Documentation = "https://ox-utils.readthedocs.io/en/latest/"
+
 [project.optional-dependencies]
+django = [
+    "django>=5.0",
+    "djangorestframework>=3.10",
+]
 files = [
+    "django>=5.0",
+    "djangorestframework>=3.10",
     "pillow>=13.0.0",
     "pymupdf>=2.0",
     "python-magic>=0.4.27",
 ]
 jwt = [
+    "django>=5.0",
+    "djangorestframework>=3.10",
     "pyjwt>=2.15.1",
 ]
 
@@ -58,10 +70,6 @@ docs = [
     "sphinx>=9.1.0",
     "sphinx-autodoc-typehints>=3.10.4",
     "sphinx-rtd-theme>=3.1.0",
-]
-django = [
-    "django>=5.0",
-    "djangorestframework>=3.10",
 ]
 
 [tool.setuptools]
