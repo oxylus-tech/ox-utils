@@ -12,6 +12,7 @@ from .color import HexColorValidator, ColorField, Colored
 from .common import UUID, Named, LongNamed, OnlyDescribed, Described, Created, Updated, Timestamped, Versioned, PackageInfo
 from .cls import ClassField, ClassPath
 from .save_hook import SaveHook, SaveHookQuerySet
+from .tree import TreeNodeQuerySet, TreeNode
 
 
 def get_model(model: str, apps: Apps | None = None) -> models.Model:
@@ -62,4 +63,7 @@ __all__ = (
     # save_hook
     "SaveHookQuerySet",
     "SaveHook",
+    # tree
+    "TreeNodeQuerySet",
+    "TreeNode",
 )

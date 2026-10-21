@@ -4,7 +4,6 @@ from django.db import models
 
 from ox_utils.django.models import UUID
 from ox_utils.django.models.tree import TreeNode as _TreeNode
-from ox_utils.django.models.owned import OwnedTreeNode as _OwnedTreeNode
 from ox_utils.django.files.models import BaseFile, BaseFolder
 
 
@@ -24,10 +23,6 @@ class Value(models.Model):
 
 
 class TreeNode(_TreeNode):
-    name = models.CharField(max_length=32, default="")
-
-
-class OwnedTreeNode(_OwnedTreeNode):
     name = models.CharField(max_length=32, default="")
 
 

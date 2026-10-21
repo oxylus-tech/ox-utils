@@ -8,7 +8,7 @@ from django.utils.translation import gettext_lazy as _
 from .save_hook import SaveHook, SaveHookQuerySet
 
 
-__all__ = ("TreeNodeQuerySet", "TreeNode", "OwnedTreeNodeQuerySet", "OwnedTreeNode")
+__all__ = ("TreeNodeQuerySet", "TreeNode")
 
 
 class TreeNodeQuerySet(SaveHookQuerySet):

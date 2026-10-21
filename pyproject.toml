@@ -1,5 +1,5 @@
 [project]
-name = "ox-utils"
+name = "oxylus-utils"
 description = "Django and python utilities."
 readme = "README.rst"
 license = "GPL-3.0-or-later"
@@ -30,9 +30,6 @@ files = [
     "pillow>=13.0.0",
     "pymupdf>=2.0",
     "python-magic>=0.4.27",
-]
-caps = [
-    "django-caps>=0.0.3",
 ]
 jwt = [
     "pyjwt>=2.15.1",
