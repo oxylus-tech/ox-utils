@@ -16,3 +16,4 @@ python:
     - method: uv
       command: sync
       groups: all
+      extras: all
