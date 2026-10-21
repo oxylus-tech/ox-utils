@@ -7,6 +7,11 @@ from .pdf_processor import PDFProcessor
 
 
 class LibreOfficeProcessor(Processor):
+    """
+    File processor using ``libreoffice`` to generate previews.
+
+    It support open document and open office document formats.
+    """
     mime_types = {
         "application/vnd.oasis.opendocument.text",
         "application/vnd.oasis.opendocument.text-template",

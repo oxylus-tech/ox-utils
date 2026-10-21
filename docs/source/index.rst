@@ -1,46 +1,15 @@
-Ox-Orch
-=======
+Ox-Utils
+========
 
-A state-driven orchestration engine for deterministic application lifecycle management.
+This library regroup various utilities extracted from the development of Oxylus-Tech
+tools. Its purpose is to reuse common patterns and tools.
 
-``ox-orch`` provides a structured way to define, execute, and rollback complex workflows such as package installation, migrations, and application reconciliation. It replaces imperative deployment scripts with a composable, state-based execution model.
-
-This project provides:
-
-- A command line tool to define and run workflows as for deployment;
-- A library to integrate and extend them for your own needs;
+Some modules may require optional dependencies, in such case you'll have to install
+it with those.
 
 
 Documentation
 -------------
-
-User guide
-..........
-
-Where you will learn how to use the command line tool.
-
-.. toctree::
-   :maxdepth: 2
-
-   cli
-
-
-Developer Guide
-...............
-
-Where you will learn how to use the python library and extend ox-orch for your own
-needs.
-
-.. toctree::
-   :maxdepth: 2
-
-   guide
-
-
-API
-...
-
-Where you will find all the API reference documentation about ox-orch.
 
 .. toctree::
    :maxdepth: 2

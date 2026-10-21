@@ -70,7 +70,7 @@ class BaseFolder(Described, Timestamped, TreeNode):
             else:
                 self.on_save()
 
-    def move_to(self, parent: Folder | None = None, name: str | None = None, save: bool = True):
+    def move_to(self, parent: BaseFolder | None = None, name: str | None = None, save: bool = True):
         """Move folder into provided parent folder or root.
 
         :param parent: parent folder

@@ -1,7 +1,7 @@
-ox_orch.django.tests
-====================
+ox_utils.django.tests
+=====================
 
-.. automodule:: ox_orch.django.tests
+.. automodule:: ox_utils.django.tests
    :show-inheritance:
    :members:
 

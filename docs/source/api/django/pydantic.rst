@@ -1,6 +1,6 @@
-ox_orch.django.pydantic
-=======================
+ox_utils.django.pydantic
+========================
 
-.. automodule:: ox_orch.django.pydantic
+.. automodule:: ox_utils.django.pydantic
    :show-inheritance:
    :members:

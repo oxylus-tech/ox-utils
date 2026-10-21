@@ -5,10 +5,13 @@ from django.conf import settings
 from .. import conf
 
 
-__all__ = ("Settings", "files_settings", "resolve")
+__all__ = ("FileSettings", "files_settings", "resolve")
 
 
 class FileSettings(conf.Settings):
+    """
+    Setting class used by the files module.
+    """
     MEDIA_DIR: Path = settings.MEDIA_ROOT / "ox_files"
     """ MEDIA directory """
     UPLOAD_DIR: str = "ox_files/uploads"
@@ -23,11 +26,6 @@ class FileSettings(conf.Settings):
     """ Buffer size used by Python-Magic to read mime types. """
     THUMBNAIL_SIZE: tuple[int, int] = (600, 800)
     """ Size for thumbnails """
-
-    WEBDAV_HOST: str = settings.ALLOWED_HOSTS[0]
-    """ Host for the WebDAV server. Defaults to the first ``ALLOWED_HOSTS``. """
-    WEBDAV_PORT: int = 8042
-    """ Port of the WebDAV server. """
 
     PROCESSORS: list[str] = [
         "ox_utils.django.files.processors.ImageProcessor",

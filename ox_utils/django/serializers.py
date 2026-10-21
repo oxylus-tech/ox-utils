@@ -6,7 +6,7 @@ from rest_framework import serializers
 from rest_framework.exceptions import PermissionDenied
 
 
-__all__ = ("RelatedField", "RelatedObjectField", "ModelSerializer", "NestedInfo", "NestedSerializer")
+__all__ = ("RelatedField", "RelatedObjectField", "ModelSerializer", "NestedInfo", "NestedSerializer", "NestedModelSerializer")
 
 
 class RelatedField(serializers.SlugRelatedField):

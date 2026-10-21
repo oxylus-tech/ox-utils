@@ -1,6 +1,6 @@
-ox_orch.django.tree
-===================
+ox_utils.django.models.tree
+===========================
 
-.. automodule:: ox_orch.django.tree
+.. automodule:: ox_utils.django.models.tree
    :show-inheritance:
    :members:

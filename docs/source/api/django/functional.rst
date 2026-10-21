@@ -1,7 +1,7 @@
-ox_orch.django.functional
-=========================
+ox_utils.django.functional
+==========================
 
-.. automodule:: ox_orch.django.functional
+.. automodule:: ox_utils.django.functional
    :show-inheritance:
    :members:
 

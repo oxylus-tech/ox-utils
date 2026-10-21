@@ -1,6 +1,6 @@
-ox_orch.django.conf
+ox_utils.django.conf
 ===================
 
-.. automodule:: ox_orch.django.conf
+.. automodule:: ox_utils.django.conf
    :show-inheritance:
    :members:

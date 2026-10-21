@@ -1,9 +1,13 @@
 from pathlib import Path
 import os
 import sys
+import django
 
 sys.path.insert(0, str(Path("..", "..").resolve()))
 sys.path.insert(0, os.path.abspath("_ext"))
+
+os.environ["DJANGO_SETTINGS_MODULE"] = "tests.django_project.settings"
+django.setup()
 
 # os.environ["DJANGO_SETTINGS_MODULE"] = "instance.settings"
 # django.setup()
@@ -16,7 +20,7 @@ sys.path.insert(0, os.path.abspath("_ext"))
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "Ox-Orch"
+project = "Ox-Utils"
 copyright = "2026, Oxylus-Technologies"
 author = "Thomas"
 release = "1.0"
@@ -32,7 +36,6 @@ extensions = [
     "sphinx.ext.autosummary",
     "sphinx_autodoc_typehints",
     "sphinx_rtd_theme",
-    "public_api",
 ]
 
 templates_path = ["_templates"]

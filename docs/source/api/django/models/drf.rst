@@ -1,7 +1,7 @@
-ox_orch.django.drf
-==================
+ox_utils.django.models.drf
+==========================
 
-.. automodule:: ox_orch.django.drf
+.. automodule:: ox_utils.django.models.drf
    :show-inheritance:
    :members:
 

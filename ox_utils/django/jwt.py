@@ -112,7 +112,7 @@ def decode(value: str, algorithms=["HS256"], **kwargs) -> dict[str, Any] | JWTok
     settings. If none succeed, will re-raise error that happened on the decoding using ``JWT_KEY``.
 
     :param jwt: the token to be decoded.
-    :param **kwargs: extra parameters to pass to ``jwt.decode``.
+    :param \*\*kwargs: extra parameters to pass to ``jwt.decode``.
     """
     keys = [get_jwt_key(), *get_jwt_fallbacks()]
     error = None

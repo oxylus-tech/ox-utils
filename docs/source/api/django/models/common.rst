@@ -1,6 +1,6 @@
-ox_orch.django.common
-=====================
+ox_utils.django.models.common
+=============================
 
-.. automodule:: ox_orch.django.common
+.. automodule:: ox_utils.django.models.common
    :show-inheritance:
    :members:

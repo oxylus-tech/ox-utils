@@ -9,6 +9,9 @@ __all__ = ("PDFProcessor",)
 
 
 class PDFProcessor(Processor):
+    """
+    Processor for pdf and other document formats (epub, office, msword).
+    """
     mime_types = {
         "application/pdf",
         "application/epub+zip",

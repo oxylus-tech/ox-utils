@@ -1,8 +1,8 @@
 Django
 ======
 
-.. automodule:: ox_orch.django
-.. public-api:: ox_orch.django
+.. automodule:: ox_utils.django
+.. public-api:: ox_utils.django
 
 
 .. toctree::

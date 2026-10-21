@@ -1,8 +1,6 @@
-ox_orch.django.color
-====================
+ox_utils.django.models.color
+============================
 
-.. automodule:: ox_orch.django.color
+.. automodule:: ox_utils.django.models.color
    :show-inheritance:
    :members:
-
-

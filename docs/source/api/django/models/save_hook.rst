@@ -1,6 +1,6 @@
-ox_orch.django.save_hook
-========================
+ox_utils.django.models.save_hook
+================================
 
-.. automodule:: ox_orch.django.save_hook
+.. automodule:: ox_utils.django.models.save_hook
    :show-inheritance:
    :members:

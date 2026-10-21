@@ -1,6 +1,6 @@
-ox_orch.django.owned
-====================
+ox_utils.django.models.owned
+============================
 
-.. automodule:: ox_orch.django.owned
+.. automodule:: ox_utils.django.models.owned
    :show-inheritance:
    :members:

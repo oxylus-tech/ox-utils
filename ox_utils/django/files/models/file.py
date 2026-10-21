@@ -201,7 +201,7 @@ class BaseFile(Described, Timestamped, UUID):
 
     def get_processor(
         self, save: bool = True, registry: processors.FileProcessors = processors.registry
-    ) -> processors.FileProcessor:
+    ) -> processors.Processor:
         """Return processor to use for this file type.
 
         Read mime-type from file if not already set.

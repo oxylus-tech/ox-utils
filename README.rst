@@ -1,20 +1,23 @@
-Ox-utils
+Ox-Utils
 ========
 
 Ox-utils is a collection of various django utilities allowing to reuse them over different
-projects. It initially extracted from the `Oxylus Project <https://github.com/oxylus-tech/oxylus>`_.
+projects. It initially extracted from the `Oxylus-Tech projects <https://github.com/oxylus-tech/>`_.
 
 
-Features:
+Django Features
+---------------
 
-- ``ox_utils.conf``: define a Settings class that allows explicit and documented settings and using django settings. Support for dynaconf.
-- ``ox_utils.jwt``: JWT tokens encoder/decoder using pyjwt.
-- ``ox_utils.models``:
+Those lies in ``ox_utils.django``:
+
+- ``conf``: define a Settings class that allows explicit and documented settings and using django settings. Support for dynaconf.
+- ``jwt``: JWT tokens encoder/decoder using pyjwt.
+- ``models``:
     - Various common models providing common fields, as ``Named``, ``UUID``, ``Color``. 
     - SaveHook: hooks on save and batch save / delete / etc.
     - Owned: wraps over django-caps for parent-child object
     - TreeNode: improved tree models inspired by MPPT.
-- ``ox_utils.files``:
+- ``files``:
     - abstract file and folder models
     - file type detection based on content and create preview from files;
     - support for images, document files as odt, word, pdf;
@@ -24,4 +27,4 @@ Features:
     - to certainly come at some point: django model field de-serializing data using pydantic models;
 - ``serializers``:
     - Expose uuid instead of real db id;
-    - Nesting serializers with parent-child models.
+    - Nesting serializers: allows to edit and update list of child items from a parent one.

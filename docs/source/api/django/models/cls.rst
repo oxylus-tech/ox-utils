@@ -1,7 +1,7 @@
-ox_orch.django.cls
-==================
+ox_utils.django.models.cls
+==========================
 
-.. automodule:: ox_orch.django.cls
+.. automodule:: ox_utils.django.models.cls
    :show-inheritance:
    :members:
 
